@@ -1,0 +1,123 @@
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+:root {
+    --primaryColor: #45188d;
+    --secondaryColor: #ede9fe;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #7c7c7c;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+    --mainRed: #db2777;
+    --bodyColor: #f6f6f6;
+}
+
+body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    background-color: var(--bodyColor);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 4rem;
+    width: 50%;
+    gap: 1rem;
+}
+
+.form-container {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px gray;
+    height: 3rem;
+    background-color: #db2777;
+    width: 25rem;
+}
+
+input {
+    flex: 1;
+}
+
+form input,
+form .addBtn {
+    font-size: 1rem;
+    background-color: var(--mainWhite);
+}
+
+form .addBtn {
+    color: var(--primaryColor);
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--primaryColor);
+    color: white;
+    cursor: pointer;
+}
+
+.list {
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.5rem;
+    box-shadow: 10px 5px 5px gray;
+    color: var(--primaryColor);
+    width: 25rem;
+}
+
+.list .listNote {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list i {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.list .removeTodo {
+    color: var(--mainRed);
+}
+
+.filterlist {
+    background-color: var(--mainWhite);
+    height: 3rem;
+    padding: 0.5rem;
+    box-shadow: 10px 5px 5px gray;
+    font-size: 1rem;
+    color: var(--primaryColor);
+    border-radius: 5px;
+}
+
+.complete {
+    text-decoration: line-through var(--primaryColor) solid 2px;
+    opacity: 0.6;
+}
