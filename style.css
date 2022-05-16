@@ -79,7 +79,7 @@ form button:hover {
     cursor: pointer;
 }
 
-.list {
+.todo {
     background-color: var(--secondaryColor);
     border-radius: 5px;
     display: flex;
@@ -91,19 +91,19 @@ form button:hover {
     width: 25rem;
 }
 
-.list .listNote {
+.todo .listNote {
     flex: 1;
     padding: 0.5rem;
     font-size: 18px;
     font-weight: bold;
 }
 
-.list i {
+.todo i {
     padding: 0.5rem;
     cursor: pointer;
 }
 
-.list .removeTodo {
+.todo .removeTodo {
     color: var(--mainRed);
 }
 
